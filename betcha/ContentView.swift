@@ -7,15 +7,23 @@
 
 import SwiftUI
 
+@MainActor
 struct ContentView: View {
+    @EnvironmentObject private var authVM: AuthViewModel
+    @State private var showLogin: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if authVM.isLoggedIn, authVM.user != nil {
+            TabView {
+                    HomeView()
+                        .badge("!")
+                        .tabItem {
+                            Label("Account", systemImage: "person.crop.circle.fill")
+                        }
+            }
+        } else {
+            LoginView()
         }
-        .padding()
     }
 }
 

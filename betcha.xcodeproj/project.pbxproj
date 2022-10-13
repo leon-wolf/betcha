@@ -11,6 +11,13 @@
 		368BDB9628F0D76300E3344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDB9528F0D76300E3344A /* ContentView.swift */; };
 		368BDB9828F0D76400E3344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368BDB9728F0D76400E3344A /* Assets.xcassets */; };
 		368BDB9B28F0D76400E3344A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368BDB9A28F0D76400E3344A /* Preview Assets.xcassets */; };
+		368BDBA328F0D97400E3344A /* Appwrite in Frameworks */ = {isa = PBXBuildFile; productRef = 368BDBA228F0D97400E3344A /* Appwrite */; };
+		368BDBA628F0DC2D00E3344A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBA528F0DC2D00E3344A /* AuthViewModel.swift */; };
+		368BDBA828F0DC6E00E3344A /* AppwriteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBA728F0DC6E00E3344A /* AppwriteService.swift */; };
+		368BDBAC28F1C71600E3344A /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBAB28F1C71600E3344A /* Secrets.swift */; };
+		368BDBAF28F1E7F500E3344A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBAE28F1E7F500E3344A /* LoginView.swift */; };
+		368BDBB228F1E95600E3344A /* Binding+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBB128F1E95600E3344A /* Binding+.swift */; };
+		368BDBB528F23E3D00E3344A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBB428F23E3D00E3344A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		368BDB9528F0D76300E3344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		368BDB9728F0D76400E3344A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		368BDB9A28F0D76400E3344A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		368BDBA528F0DC2D00E3344A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		368BDBA728F0DC6E00E3344A /* AppwriteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppwriteService.swift; sourceTree = "<group>"; };
+		368BDBAB28F1C71600E3344A /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		368BDBAE28F1E7F500E3344A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		368BDBB128F1E95600E3344A /* Binding+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+.swift"; sourceTree = "<group>"; };
+		368BDBB428F23E3D00E3344A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368BDBA328F0D97400E3344A /* Appwrite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +65,15 @@
 		368BDB9228F0D76300E3344A /* betcha */ = {
 			isa = PBXGroup;
 			children = (
+				368BDBB028F1E94D00E3344A /* Extensions */,
+				368BDBAA28F1C70900E3344A /* Configs */,
+				368BDBA928F17C4100E3344A /* Views */,
+				368BDBA428F0DBF900E3344A /* ViewModels */,
 				368BDB9328F0D76300E3344A /* betchaApp.swift */,
 				368BDB9528F0D76300E3344A /* ContentView.swift */,
 				368BDB9728F0D76400E3344A /* Assets.xcassets */,
 				368BDB9928F0D76400E3344A /* Preview Content */,
+				368BDBA728F0DC6E00E3344A /* AppwriteService.swift */,
 			);
 			path = betcha;
 			sourceTree = "<group>";
@@ -65,6 +84,55 @@
 				368BDB9A28F0D76400E3344A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		368BDBA428F0DBF900E3344A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBA528F0DC2D00E3344A /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		368BDBA928F17C4100E3344A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBB328F23E3300E3344A /* Home */,
+				368BDBAD28F1E7EC00E3344A /* Auth */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		368BDBAA28F1C70900E3344A /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBAB28F1C71600E3344A /* Secrets.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		368BDBAD28F1E7EC00E3344A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBAE28F1E7F500E3344A /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		368BDBB028F1E94D00E3344A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBB128F1E95600E3344A /* Binding+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		368BDBB328F23E3300E3344A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				368BDBB428F23E3D00E3344A /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,9 @@
 			dependencies = (
 			);
 			name = betcha;
+			packageProductDependencies = (
+				368BDBA228F0D97400E3344A /* Appwrite */,
+			);
 			productName = betcha;
 			productReference = 368BDB9028F0D76300E3344A /* betcha.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 368BDB8728F0D76300E3344A;
+			packageReferences = (
+				368BDBA128F0D97400E3344A /* XCRemoteSwiftPackageReference "sdk-for-apple" */,
+			);
 			productRefGroup = 368BDB9128F0D76300E3344A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +211,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368BDBAF28F1E7F500E3344A /* LoginView.swift in Sources */,
 				368BDB9628F0D76300E3344A /* ContentView.swift in Sources */,
+				368BDBAC28F1C71600E3344A /* Secrets.swift in Sources */,
+				368BDBA828F0DC6E00E3344A /* AppwriteService.swift in Sources */,
 				368BDB9428F0D76300E3344A /* betchaApp.swift in Sources */,
+				368BDBB528F23E3D00E3344A /* HomeView.swift in Sources */,
+				368BDBB228F1E95600E3344A /* Binding+.swift in Sources */,
+				368BDBA628F0DC2D00E3344A /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,11 +350,14 @@
 				DEVELOPMENT_TEAM = 4ZNHSCB69W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = betcha;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +382,14 @@
 				DEVELOPMENT_TEAM = 4ZNHSCB69W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = betcha;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +425,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		368BDBA128F0D97400E3344A /* XCRemoteSwiftPackageReference "sdk-for-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/appwrite/sdk-for-apple";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		368BDBA228F0D97400E3344A /* Appwrite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 368BDBA128F0D97400E3344A /* XCRemoteSwiftPackageReference "sdk-for-apple" */;
+			productName = Appwrite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 368BDB8828F0D76300E3344A /* Project object */;
 }
