@@ -9,13 +9,30 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var authVM: AuthViewModel
+    @EnvironmentObject private var entryVM: EntryViewModel
     
     var body: some View {
-        VStack {
-            if let user = authVM.user {
-                Text("Helllo, \(user.name)")
-                Text("Your Email: \(user.email)")
-                Text("Your registration date: \(user.registration)")
+        ScrollView {
+            LazyVStack {
+                ForEach(entryVM.entryList, id: \.id) { entry in
+                    HStack {
+                        Text(entry.label)
+                        Text(entry.createdAt)
+                    }
+                    .background {
+                        Color.red
+                    }
+                }
+            }
+        }
+        .refreshable {
+            Task {
+                await entryVM.getEntries()
+            }
+        }
+        .onAppear {
+            Task {
+                await entryVM.getEntries()
             }
         }
     }

@@ -16,9 +16,8 @@ struct ContentView: View {
         if authVM.isLoggedIn, authVM.user != nil {
             TabView {
                     HomeView()
-                        .badge("!")
                         .tabItem {
-                            Label("Account", systemImage: "person.crop.circle.fill")
+                            Label("Home", systemImage: "house")
                         }
             }
         } else {

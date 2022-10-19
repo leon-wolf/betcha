@@ -15,6 +15,7 @@ struct betchaApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(AuthViewModel.shared)
+                .environmentObject(EntryViewModel.shared)
         }
     }
 }
