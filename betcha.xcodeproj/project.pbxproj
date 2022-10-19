@@ -18,6 +18,8 @@
 		368BDBAF28F1E7F500E3344A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBAE28F1E7F500E3344A /* LoginView.swift */; };
 		368BDBB228F1E95600E3344A /* Binding+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBB128F1E95600E3344A /* Binding+.swift */; };
 		368BDBB528F23E3D00E3344A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBB428F23E3D00E3344A /* HomeView.swift */; };
+		36B05B6528F861DD00E7635A /* EntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6428F861DD00E7635A /* EntryListViewModel.swift */; };
+		36B05B6828F89A9000E7635A /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6728F89A9000E7635A /* EntryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		368BDBAE28F1E7F500E3344A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		368BDBB128F1E95600E3344A /* Binding+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+.swift"; sourceTree = "<group>"; };
 		368BDBB428F23E3D00E3344A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		36B05B6428F861DD00E7635A /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
+		36B05B6728F89A9000E7635A /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		368BDB9228F0D76300E3344A /* betcha */ = {
 			isa = PBXGroup;
 			children = (
+				36B05B6628F89A8300E7635A /* Models */,
 				368BDBB028F1E94D00E3344A /* Extensions */,
 				368BDBAA28F1C70900E3344A /* Configs */,
 				368BDBA928F17C4100E3344A /* Views */,
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				368BDBA528F0DC2D00E3344A /* AuthViewModel.swift */,
+				36B05B6428F861DD00E7635A /* EntryListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -133,6 +139,14 @@
 				368BDBB428F23E3D00E3344A /* HomeView.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		36B05B6628F89A8300E7635A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36B05B6728F89A9000E7635A /* EntryModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +229,10 @@
 				368BDB9628F0D76300E3344A /* ContentView.swift in Sources */,
 				368BDBAC28F1C71600E3344A /* Secrets.swift in Sources */,
 				368BDBA828F0DC6E00E3344A /* AppwriteService.swift in Sources */,
+				36B05B6828F89A9000E7635A /* EntryModel.swift in Sources */,
 				368BDB9428F0D76300E3344A /* betchaApp.swift in Sources */,
 				368BDBB528F23E3D00E3344A /* HomeView.swift in Sources */,
+				36B05B6528F861DD00E7635A /* EntryListViewModel.swift in Sources */,
 				368BDBB228F1E95600E3344A /* Binding+.swift in Sources */,
 				368BDBA628F0DC2D00E3344A /* AuthViewModel.swift in Sources */,
 			);
@@ -365,6 +381,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leonwolf.betcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,6 +416,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leonwolf.betcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

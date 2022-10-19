@@ -20,9 +20,9 @@ struct LoginView: View {
             TextField(text: $username) {
                 Text("Email")
             }
-            .keyboardType(.emailAddress)
             .autocorrectionDisabled(true)
             .textInputAutocapitalization(.never)
+            .keyboardType(.emailAddress)
             .padding()
             SecureField(text: $password) {
                 Text("Password")
@@ -31,9 +31,6 @@ struct LoginView: View {
             Button {
                 Task {
                     await authVM.login(email: username, password: password)
-                }
-                if authVM.isLoggedIn {
-                    presentationMode.wrappedValue.dismiss()
                 }
             } label: {
                 Text("Login")

@@ -81,8 +81,8 @@ class AuthViewModel: ObservableObject {
     public func login(email: String, password: String) async {
         Task {
             do {
-                let result = try await AppwriteService.shared.account.createEmailSession(email: email, password: password)
-                isLoggedIn = true
+                _ = try await AppwriteService.shared.account.createEmailSession(email: email, password: password)
+                getAccount()
             } catch {
                 print("Error: \(error.localizedDescription)")
             }
