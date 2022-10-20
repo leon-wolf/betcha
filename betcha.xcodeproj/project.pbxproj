@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3688A78B2901F452000A4421 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3688A78A2901F452000A4421 /* DetailView.swift */; };
 		368BDB9428F0D76300E3344A /* betchaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDB9328F0D76300E3344A /* betchaApp.swift */; };
 		368BDB9628F0D76300E3344A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDB9528F0D76300E3344A /* ContentView.swift */; };
 		368BDB9828F0D76400E3344A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368BDB9728F0D76400E3344A /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3688A78A2901F452000A4421 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		368BDB9028F0D76300E3344A /* betcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = betcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368BDB9328F0D76300E3344A /* betchaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = betchaApp.swift; sourceTree = "<group>"; };
 		368BDB9528F0D76300E3344A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				368BDBB428F23E3D00E3344A /* HomeView.swift */,
+				3688A78A2901F452000A4421 /* DetailView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				368BDBAF28F1E7F500E3344A /* LoginView.swift in Sources */,
+				3688A78B2901F452000A4421 /* DetailView.swift in Sources */,
 				368BDB9628F0D76300E3344A /* ContentView.swift in Sources */,
 				368BDBAC28F1C71600E3344A /* Secrets.swift in Sources */,
 				368BDBA828F0DC6E00E3344A /* AppwriteService.swift in Sources */,
