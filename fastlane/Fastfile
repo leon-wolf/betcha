@@ -60,7 +60,7 @@ platform :ios do
       configuration: "Release",
       scheme: "betcha",
       export_method: "app-store",
-      output-name: "betcha.ipa"
+      output_name: "betcha.ipa"
       export_options: {
         provisioningProfiles: {
             DEVELOPER_APP_ID => PROVISIONING_PROFILE_SPECIFIER
