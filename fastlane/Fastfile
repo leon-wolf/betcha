@@ -58,9 +58,9 @@ platform :ios do
 
     gym(
       configuration: "Release",
-      workspace: "betcha.xcworkspace",
       scheme: "betcha",
       export_method: "app-store",
+      output-name: "betcha.ipa"
       export_options: {
         provisioningProfiles: {
             DEVELOPER_APP_ID => PROVISIONING_PROFILE_SPECIFIER
