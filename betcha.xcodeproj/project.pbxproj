@@ -20,6 +20,7 @@
 		368BDBB528F23E3D00E3344A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368BDBB428F23E3D00E3344A /* HomeView.swift */; };
 		36B05B6528F861DD00E7635A /* EntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6428F861DD00E7635A /* EntryListViewModel.swift */; };
 		36B05B6828F89A9000E7635A /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6728F89A9000E7635A /* EntryModel.swift */; };
+		36CB46E929009B2600EC32DC /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB46E829009B2600EC32DC /* DebugView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		368BDBB428F23E3D00E3344A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		36B05B6428F861DD00E7635A /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
 		36B05B6728F89A9000E7635A /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
+		36CB46E829009B2600EC32DC /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				368BDBB328F23E3300E3344A /* Home */,
 				368BDBAD28F1E7EC00E3344A /* Auth */,
+				36CB46E829009B2600EC32DC /* DebugView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				36B05B6528F861DD00E7635A /* EntryListViewModel.swift in Sources */,
 				368BDBB228F1E95600E3344A /* Binding+.swift in Sources */,
 				368BDBA628F0DC2D00E3344A /* AuthViewModel.swift in Sources */,
+				36CB46E929009B2600EC32DC /* DebugView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

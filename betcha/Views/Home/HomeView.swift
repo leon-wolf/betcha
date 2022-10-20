@@ -31,8 +31,10 @@ struct HomeView: View {
             }
         }
         .onAppear {
-            Task {
-                await entryVM.getEntries()
+            if entryVM.entryList.count == 0 {
+                Task {
+                    await entryVM.getEntries()
+                }
             }
         }
     }
