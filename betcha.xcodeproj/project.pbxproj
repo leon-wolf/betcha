@@ -21,6 +21,7 @@
 		36B05B6528F861DD00E7635A /* EntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6428F861DD00E7635A /* EntryListViewModel.swift */; };
 		36B05B6828F89A9000E7635A /* EntryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36B05B6728F89A9000E7635A /* EntryModel.swift */; };
 		36CB46E929009B2600EC32DC /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB46E829009B2600EC32DC /* DebugView.swift */; };
+		36CB46EB2901C56B00EC32DC /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = 36CB46EA2901C56B00EC32DC /* Gemfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		36B05B6428F861DD00E7635A /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
 		36B05B6728F89A9000E7635A /* EntryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryModel.swift; sourceTree = "<group>"; };
 		36CB46E829009B2600EC32DC /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
+		36CB46EA2901C56B00EC32DC /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		368BDB8728F0D76300E3344A = {
 			isa = PBXGroup;
 			children = (
+				36CB46EA2901C56B00EC32DC /* Gemfile */,
 				368BDB9228F0D76300E3344A /* betcha */,
 				368BDB9128F0D76300E3344A /* Products */,
 			);
@@ -216,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36CB46EB2901C56B00EC32DC /* Gemfile in Resources */,
 				368BDB9B28F0D76400E3344A /* Preview Assets.xcassets in Resources */,
 				368BDB9828F0D76400E3344A /* Assets.xcassets in Resources */,
 			);
@@ -364,10 +368,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betcha/Preview Content\"";
-				DEVELOPMENT_TEAM = 4ZNHSCB69W;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4ZNHSCB69W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = betcha;
@@ -385,6 +391,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leonwolf.betcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore dev.leonwolf.betcha";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -399,10 +407,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"betcha/Preview Content\"";
-				DEVELOPMENT_TEAM = 4ZNHSCB69W;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4ZNHSCB69W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = betcha;
@@ -420,6 +430,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.leonwolf.betcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore dev.leonwolf.betcha";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
