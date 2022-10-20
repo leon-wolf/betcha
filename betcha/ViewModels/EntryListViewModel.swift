@@ -15,6 +15,11 @@ class EntryViewModel: ObservableObject {
     
     init() {}
     
+    func resetEntries() async {
+            entryList = []
+            print("$$$", "ENTRIES: \(entryList.count)")
+    }
+    
     func getEntries() async {
         do {
             let documentList = try await AppwriteService.shared.database.listDocuments(
@@ -23,7 +28,7 @@ class EntryViewModel: ObservableObject {
             )
             let documents = documentList.convertTo(fromJson: EntryModel.from)
             entryList = documents
-            print("entries: \(documents)")
+            print("$$$", "entries: \(documents)")
         } catch {
             print("Error: \(error.localizedDescription)")
         }

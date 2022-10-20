@@ -15,10 +15,16 @@ struct ContentView: View {
     var body: some View {
         if authVM.isLoggedIn, authVM.user != nil {
             TabView {
-                    HomeView()
+                HomeView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                #if DEBUG
+                    DebugView()
                         .tabItem {
-                            Label("Home", systemImage: "house")
+                            Label("Debug", systemImage: "ladybug")
                         }
+                #endif
             }
         } else {
             LoginView()
