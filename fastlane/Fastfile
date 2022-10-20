@@ -46,10 +46,6 @@ platform :ios do
 
     increment_build_number(xcodeproj: "betcha.xcodeproj")
 
-    cocoapods(
-      clean_install: true
-    )
-
     match(
       type: 'appstore',
       app_identifier: "#{DEVELOPER_APP_IDENTIFIER}",
